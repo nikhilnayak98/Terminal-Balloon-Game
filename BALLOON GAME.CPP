@@ -352,7 +352,7 @@ void start()
 	outtextxy(10,350,"8. You require to score 200 points to enter the third level.");
 	outtextxy(10,390,"9. Third level has 6 arrows and 6 balloons.");
 	settextstyle(7,0,1);
-	outtextxy(150,430,"PRESS ANY KEY TO CONTINUE           Made By:- Nikhil Nayak");
+	outtextxy(150,430,"PRESS ANY KEY TO CONTINUE           Coded By:- Nikhil Nayak");
 
 
 	getch();
