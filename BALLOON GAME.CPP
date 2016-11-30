@@ -1,8 +1,8 @@
-# include<graphics.h>
-# include<conio.h>
-# include<stdio.h>
-# include<stdlib.h>
-# include<dos.h>
+#include<graphics.h>
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<dos.h>
 #include<iostream.h>
 #define ARROW_SIZE 7
 #define BALLOON_SIZE 5
@@ -203,7 +203,7 @@ getimage(p-4*BALLOON_SIZE,q-5*BALLOON_SIZE,p+4*BALLOON_SIZE,q+7*BALLOON_SIZE,bal
    free(balloon);
    closegraph();
 }
-void draw_balloon(int x,int y)
+void draw_balloon(int x,int y)		// Balloon Dimensions
 {
 	 setcolor(RED);
 	 setfillstyle(1,BLUE);
@@ -211,7 +211,7 @@ void draw_balloon(int x,int y)
 	 line(x,y+4*BALLOON_SIZE,x,y+6*BALLOON_SIZE);
 }
 
-void draw_burst ( int x, int y )
+void draw_burst ( int x, int y )		// Balloon Burst Anim
 {
 	setlinestyle(0,0,1);
 	line ( x - 16, y - 12, x - 10, y - 2 ) ;
@@ -236,7 +236,7 @@ void draw_burst ( int x, int y )
 
 }
 
-void draw_bow(int x,int y)
+void draw_bow(int x,int y)		// Bow Dimensions
 {
 	setcolor(RED);
 	setlinestyle(0,0,1);
