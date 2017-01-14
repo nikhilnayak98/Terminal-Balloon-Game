@@ -1,3 +1,9 @@
+/*
+ * @author: Nikhil Nayak
+ * @description: Terminal Shooting Game for CBSE grade 12th CS Project.
+ * Created on 25/12/2015.
+*/
+
 #include<graphics.h>
 #include<conio.h>
 #include<stdio.h>
@@ -21,7 +27,7 @@ void start();
 void main()
 {
 int gmode = DETECT, gdriver , area ;
-initgraph ( &gmode, &gdriver, "c:\tc\bgi\ " ) ;
+initgraph ( &gmode, &gdriver, "c:\bgi\ " ) ;
 setbkcolor(1);
 start();
 int maxx = getmaxx() ;
@@ -211,7 +217,7 @@ void draw_balloon(int x,int y)		// Balloon Dimensions
 	 line(x,y+4*BALLOON_SIZE,x,y+6*BALLOON_SIZE);
 }
 
-void draw_burst ( int x, int y )		// Balloon Burst Anim
+void draw_burst ( int x, int y )		// Balloon Burst Animation
 {
 	setlinestyle(0,0,1);
 	line ( x - 16, y - 12, x - 10, y - 2 ) ;
